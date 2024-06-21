@@ -22,6 +22,9 @@ and then go to your terminal,
 go to your project and write command:
 go get -a
 
+or this command
+go get repository_path
+
 With that command your go.mod file will include remote package
 and you can use its methods and variables
 
