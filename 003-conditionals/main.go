@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"math/rand"
+)
 
 func main() {
 
@@ -29,4 +32,21 @@ func main() {
 		fmt.Println("Te fundí la masa cefálica")
 	}
 
+	//statement; statement
+
+	if z := 2 * rand.Intn(x); z >= x {
+		fmt.Printf("z is %v and that is greater than or equal x which is %v\n", z, x)
+	} else {
+		fmt.Printf("z is %v and that is less than x which is %v\n", z, x)
+	}
+
+	if k := f(); k < x {
+		fmt.Printf("k value is %v and that is less than x value = %v\n", k, x)
+	} else {
+		fmt.Printf("k value is %v and that is greater than x value = %v\n", k, x)
+	}
+}
+
+func f() int {
+	return 2 * rand.Intn(30)
 }
