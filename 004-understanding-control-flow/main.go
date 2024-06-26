@@ -2,6 +2,11 @@ package main
 
 import "fmt"
 
+//Function that run first that any others intruction using Go
+func init() {
+	fmt.Println("This will run first than any code on main func()")
+}
+
 func main() {
 	//SEQUENCE
 	fmt.Println("First statement to run")
